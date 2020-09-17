@@ -1,0 +1,9 @@
+1. extract_sc_for_dream.py,     							collect data for vae amd rnn.
+2. vae_train_sc_dream.py,        							train vae.
+3. series_sc_dream_1.py,         							use the trained vae to prepossing the data for rnn training.
+4. rnn_train_sc_dream.py,       							train the rnn to generate rnn model and initial_z.
+5. train_in_dream.py,                							use the rnn as a dream to train a policy.
+6. eval_mini_srcgame_dream.py,  					test or train the policy on the real SC2.
+
+for an iterative process, continue from step 1, and add '_X' to represent the file. 
+X means the number of iteration, from 1 to n.
