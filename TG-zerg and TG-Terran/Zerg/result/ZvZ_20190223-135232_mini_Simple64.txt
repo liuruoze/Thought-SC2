@@ -1,0 +1,15 @@
+difficulty: 7, game_num: 100
+win: 93, 0.93
+fair: 1, 0.01
+loss: 6, 0.06
+
+difficulty: 6, game_num: 100
+win: 94, 0.94
+fair: 0, 0.00
+loss: 6, 0.06
+
+difficulty: 5, game_num: 100
+win: 56, 0.56
+fair: 1, 0.01
+loss: 43, 0.43
+

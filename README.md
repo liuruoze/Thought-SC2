@@ -6,6 +6,17 @@ This is the code for Thought-Game and the model experiments (implement the World
 
 Also contains a script to train an agent against level-10 in "train_level10_eval_mini_srcgame_add_map_bn".
 
+## Contents
+
+The below table shows the directories for the contents of the project. We provide codes for TG-SC2, TG-Zerg, TG-Terran, TG-SC1, TG-Hypothesis, and WorldModel-SC2. 
+
+Directory | Content
+------------ | -------------
+All except below | Codes for TG-SC2 and WorldModel-SC2
+TG-Hypothesis | Codes for different fidelity levels of TG
+TG-SC1 | Codes for running on SC1 with TorchCraft
+TG-Zerg and TG-Terran | Codes for Zerg race and Terran race
+
 ### Requirements
 - python==3.5
 - tensorflow==1.5

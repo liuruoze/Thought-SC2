@@ -1,0 +1,80 @@
+difficulty: 7, game_num: 100
+win: 86, 0.86
+fair: 0, 0.00
+loss: 14, 0.14
+
+difficulty: 6, game_num: 100
+win: 84, 0.84
+fair: 0, 0.00
+loss: 16, 0.16
+
+difficulty: 5, game_num: 100
+win: 90, 0.90
+fair: 0, 0.00
+loss: 10, 0.10
+
+difficulty: 4, game_num: 100
+win: 83, 0.83
+fair: 0, 0.00
+loss: 17, 0.17
+
+difficulty: 3, game_num: 100
+win: 83, 0.83
+fair: 0, 0.00
+loss: 17, 0.17
+
+difficulty: 2, game_num: 100
+win: 87, 0.87
+fair: 0, 0.00
+loss: 13, 0.13
+
+difficulty: 1, game_num: 100
+win: 78, 0.78
+fair: 0, 0.00
+loss: 22, 0.22
+
+difficulty: 7, game_num: 100 policy_wait_sec = 2
+win: 93, 0.93
+fair: 1, 0.01
+loss: 6, 0.06
+
+difficulty: 7, game_num: 100 policy_wait_sec = 4
+win: 87, 0.87
+fair: 4, 0.04
+loss: 9, 0.09
+
+difficulty: 7, game_num: 100 policy_wait_sec = 3
+win: 93, 0.93
+fair: 2, 0.02
+loss: 5, 0.05
+
+difficulty: 6, game_num: 100
+win: 96, 0.96
+fair: 3, 0.03
+loss: 1, 0.01
+
+difficulty: 5, game_num: 100
+win: 99, 0.99
+fair: 0, 0.00
+loss: 1, 0.01
+
+difficulty: 4, game_num: 100
+win: 97, 0.97
+fair: 0, 0.00
+loss: 3, 0.03
+
+difficulty: 3, game_num: 100
+win: 98, 0.98
+fair: 0, 0.00
+loss: 2, 0.02
+
+difficulty: 2, game_num: 100
+win: 100, 1.00
+fair: 0, 0.00
+loss: 0, 0.00
+
+difficulty: 1, game_num: 100
+win: 100, 1.00
+fair: 0, 0.00
+loss: 0, 0.00
+
