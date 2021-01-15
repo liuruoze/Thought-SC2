@@ -4,6 +4,8 @@
 
 This is the code for Thought-Game and the model experiments (implement the WorldModel) on it. 
 
+Corresponding to the paper "Efficient Reinforcement Learning for StarCraft by Abstract Forward Models and Transfer Learning"
+
 Also contains a script to train an agent against level-10 in "train_level10_eval_mini_srcgame_add_map_bn".
 
 ## Contents
