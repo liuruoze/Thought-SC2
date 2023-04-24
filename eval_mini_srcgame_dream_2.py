@@ -247,7 +247,7 @@ def Parameter_Server(Synchronizer, cluster, log_path, model_path, procs):
     config.gpu_options.allow_growth = True
     server = tf.train.Server(cluster, job_name="ps", task_index=0, config=config)
     sess = tf.Session(target=server.target, config=config)
-    summary_writer = tf.summary.FileWriter(log_path)
+    summary_writer = tf.summary.create_file_writer(log_path)
     Net = MiniNetwork(sess=sess, summary_writer=summary_writer, rl_training=FLAGS.training,
                       cluster=cluster, index=0, device=DEVICE[0 % len(DEVICE)],
                       ppo_load_path=FLAGS.restore_model_path, ppo_save_path=model_path)

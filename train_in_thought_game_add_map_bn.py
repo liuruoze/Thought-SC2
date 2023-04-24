@@ -209,7 +209,7 @@ def Parameter_Server(Synchronizer, cluster, log_path, model_path, procs):
     server = tf.train.Server(cluster, job_name="ps", task_index=0, config=config)
     #config.gpu_options.per_process_gpu_memory_fraction = 0.2
     sess = tf.Session(target=server.target, config=config)
-    summary_writer = tf.summary.FileWriter(log_path)
+    summary_writer = tf.summary.create_file_writer(log_path)
     mini_net = MiniNetwork(sess, index=0, summary_writer=summary_writer, rl_training=True, cluster=cluster,
                            ppo_load_path=FLAGS.restore_model_path, ppo_save_path=model_path,
                            freeze_head=FLAGS.freeze_head, use_bn=FLAGS.use_bn, use_sep_net=FLAGS.use_sep_net,

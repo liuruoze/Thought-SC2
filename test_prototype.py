@@ -265,7 +265,7 @@ def Parameter_Server(Synchronizer, cluster, log_path, model_path, dynamic_path, 
     server = tf.train.Server(cluster, job_name="ps", task_index=0, config=config)
     #config.gpu_options.per_process_gpu_memory_fraction = 0.2
     sess = tf.Session(target=server.target, config=config)
-    summary_writer = tf.summary.FileWriter(log_path)
+    summary_writer = tf.summary.create_file_writer(log_path)
     Net = HierNetwork(sess=sess, summary_writer=summary_writer, rl_training=FLAGS.training,
                       cluster=cluster, index=0, device=DEVICE[0 % len(DEVICE)],
                       ppo_load_path=FLAGS.restore_model_path, ppo_save_path=model_path, dynamic_load_path=FLAGS.restore_dynamic_path)

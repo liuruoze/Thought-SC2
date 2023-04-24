@@ -11,7 +11,7 @@ from dynamic_network2 import DynamicNetwork
 
 class MiniNetwork(object):
 
-    def __init__(self, sess=None, summary_writer=tf.summary.FileWriter("logs/"), rl_training=False,
+    def __init__(self, sess=None, summary_writer=tf.summary.create_file_writer("logs/"), rl_training=False,
                  reuse=False, cluster=None, index=0, device='/gpu:0',
                  ppo_load_path=None, ppo_save_path=None):
         self.policy_model_path_load = ppo_load_path + "mini"

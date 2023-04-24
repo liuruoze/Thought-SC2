@@ -49,7 +49,7 @@ class MappingNetwork(object):
         self.summary_op = tf.summary.merge_all()
 
         log_path = save_path.replace("model", "logs")
-        self.summary_writer = tf.summary.FileWriter(log_path, self.sess.graph)
+        self.summary_writer = tf.summary.create_file_writer(log_path, self.sess.graph)
         self._define_sl_saver()
 
     def initialize(self):

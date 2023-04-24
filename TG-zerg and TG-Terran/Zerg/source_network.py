@@ -11,7 +11,7 @@ from mapping_network import MappingNetwork
 
 class SourceNetwork(object):
 
-    def __init__(self, sess=None, summary_writer=tf.summary.FileWriter("logs/"), rl_training=False,
+    def __init__(self, sess=None, summary_writer=tf.summary.create_file_writer("logs/"), rl_training=False,
                  reuse=False, cluster=None, index=0, device='/gpu:0',
                  load_path=None, save_path=None):
         self.policy_model_path_load = load_path + "ppo"
